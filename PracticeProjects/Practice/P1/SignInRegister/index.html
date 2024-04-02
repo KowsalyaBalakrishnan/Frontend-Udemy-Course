@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn | Anchor</title>
+    <!-- add icon link -->
+    <link
+      rel="icon"
+      type="images/x-icon"
+      href="https://www.w3docs.com/favicon.ico"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link StyleSheet -->
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+
+  <!-- Body -->
+  <body class="root-container">
+    <div class="left">
+      <!-- Header Block -->
+      <header>
+        <div class="header-primary-container">
+          <div class="header-home-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 header-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+              />
+            </svg>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              ><span>anchor</span></a
+            >
+          </div>
+          <div class="header-register-container">
+            <p>
+              Are you new to Anchor?
+              <a href="register.html">Get an Invite</a>
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Sign In Section -->
+      <section>
+        <div class="sign-in">
+          <form action="#" method="post">
+            <p>Sign into your account</p>
+            <div class="input-box">
+              <label for="email">Email</label>
+
+              <input
+                type="text"
+                id="email"
+                name="email"
+                size="65"
+                placeholder="your@email.com"
+                class="text-input-box"
+              />
+            </div>
+
+            <div class="input-box bottom">
+              <label for="password">Password</label>
+
+              <input
+                type="password"
+                id="password"
+                name="password"
+                size="65"
+                placeholder="Password (min 8 characters)"
+              />
+            </div>
+
+            <a href="#">Forgot password</a>
+
+            <button>Sign In</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <div class="right">
+      <img src="images/img-2.png" alt="anchor" />
+    </div>
+  </body>
+</html>

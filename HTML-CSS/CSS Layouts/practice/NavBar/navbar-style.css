@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main-header {
+  background-color: rgb(247, 200, 111);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-name {
+  color: #444;
+}
+
+.navigator a:link {
+  align-self: center;
+  margin-right: 15px;
+  text-decoration: none;
+  color: rgb(150, 64, 2);
+  cursor: pointer;
+}
+
+.navigator a:visited {
+  color: rgb(150, 64, 2);
+}
+
+.navigator a:hover,
+.navigator a:active {
+  color: crimson;
+}

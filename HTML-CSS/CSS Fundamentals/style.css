@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-style: normal;
+  text-align: center;
+}
+
+h2 {
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+h3,
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(4, 127, 164);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+footer p {
+  font-size: small;
+}
+
+#tech {
+  color: brown;
+  font-weight: bold;
+}
+
+#copyright {
+  font-style: italic;
+  color: dimgray;
+}
+
+.related-authors {
+  font-weight: bold;
+}
+
+.related-post-decor {
+  list-style: none;
+}
+
+aside {
+  background-color: #f2f0f0;
+  border-top: 5px solid #047fa4;
+  border-bottom: 5px solid #047fa4;
+  padding: 50px 0;
+  width: 500px;
+}
+
+/* 
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(odd) {
+  color: rgb(4, 127, 164);
+} */
+
+/* Styling Links LVHA -> SAME ORDER ONLY*/
+a:link {
+  /* Only Valid links are targets => <a>test</a> will be unaffected as it doesn't have href (valid)*/
+  color: #047fa4;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #047fa4; /*Keep the same color for visited as well */
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline solid;
+}
+
+a:active {
+  background-color: black;
+}
+
+h1:hover {
+  color: #444;
+}
+
+/* Box Model */
+.main-header {
+  border-top: 5px solid #047fa4;
+  background-color: #f2f0f0;
+  padding: 20px 40px;
+  margin-bottom: 50px;
+  /* height: 80px; */
+}
+
+.main-article {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+.main-article h2,
+.main-article h3 {
+  margin-bottom: 20px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.post-image {
+  width: 50%;
+  height: auto;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main-header nav a:link {
+  /* 
+  VERTICAL NAV - Make INLINE AS BLOCK STACKS <a> 
+  background-color: antiquewhite;
+  margin: 10px;
+  padding: 20px;
+  display: block; */
+
+  /* HORIZONTAL NAV - Make Inline as Block to apply Margins */
+  background-color: antiquewhite;
+  margin-right: 30px;
+  margin-top: 30px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.main-header nav a:link:last-child {
+  margin-right: 0;
+}
+
+.main-header h1 {
+  font-style: italic;
+}
+
+.main-header h1::first-letter {
+  font-style: normal;
+  margin-right: 15px;
+}
+
+p::first-letter {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* First element after any particular element is JSON Sibling */
+h3 + p::first-line {
+  color: brown;
+}
+
+/* Adding TOP marker with relative and absolute */
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  color: #444;
+  background-color: yellow;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  right: -10px;
+  top: -25px;
+}

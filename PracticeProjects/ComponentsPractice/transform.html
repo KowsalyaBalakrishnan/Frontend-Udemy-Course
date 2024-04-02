@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformers and Transitions</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        background-color: rgb(254, 180, 68);
+        padding: 50px;
+        width: 25px;
+        height: 25px;
+        /* border-top-left-radius: 50%;
+        border-top-right-radius: 50%; */
+      }
+
+      /* body {
+        width: 500px;
+        margin-top: 50px;
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-evenly;
+      } */
+
+      /* Transforms */
+      /* 
+      ROTATES ELEMENT AND IT DOESN'T STICK TO THE ACTUAL BASE
+
+      .transform-item:hover {
+            transform: rotate(45deg);
+            transform-origin: 50px 50px;
+        } */
+
+      /* 
+      MOVES THE ELEMENT FROM IT'S CURRENT POSITION
+      .transform-item:hover {
+        transform: translateX(130px);
+        transform: translateY(130px);
+        transform: translate(130px, 130px);
+      } */
+
+      /* 
+      SLANTING POSITION WITH STICKY BASE
+      
+      .transform-item:hover {
+        transform: skewX(-20deg);
+        transform: skewY(20deg);
+      } */
+
+      /* 
+      TO MAKE THE SIZE BIGGER - 2 PARAMS - WIDTH AND HEIGHT
+      DEFAULT 1 - AS IT IS
+      MORE THAN 1 WILL INCREASE THE SIZE
+      IF GIVEN NEGATIVE VALUE, IT DECREASES THE SIZE
+      
+      .transform-item:hover {
+        transform: scale(1.5);
+      } */
+
+      .transition-item:hover {
+        background-color: #ea999d;
+        transform: scale(1, 1.15);
+        transition: 0.3s;
+        box-shadow: 5px 5px 25px rgb(222, 221, 221);
+      }
+
+      img {
+        z-index: 1;
+        padding: 20px;
+      }
+      p {
+        z-index: 2;
+        color: #fff;
+        background-color: red;
+        font-size: 24px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box transform-item transition-item"></div>
+    <br />
+    <br />
+    <div class="box transform-item transition-item"></div> -->
+
+    <img
+      src="https://img.freepik.com/free-vector/beautiful-gradient-spring-landscape_23-2148448598.jpg?size=626&ext=jpg"
+      alt="landscape"
+    />
+    <p>Z-INDEX</p>
+  </body>
+</html>
